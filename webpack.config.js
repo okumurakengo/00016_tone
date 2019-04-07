@@ -18,6 +18,7 @@ module.exports = {
     ]},
     plugins: glob.sync("./src/*").map(entry => {
         return new HtmlWebpackPlugin({
+            template: "template.html",
             chunks: [entry.replace(/(\/src|\.js|\.ts)/g, "")],
             filename: `${entry.replace(/(\/src|\.js|\.ts)/g, "")}.html`,
         })
