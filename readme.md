@@ -7,5 +7,5 @@ npx webpack-dev-server
 
 ```
 yarn
-webpack-dev-server
+yarn run webpack-dev-server
 ```
