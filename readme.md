@@ -1,11 +1,11 @@
 ```
 npm i
 npx webpack-dev-server
-```
 
-または、
+# or
 
-```
 yarn
 yarn run webpack-dev-server
 ```
+
+http://localhost:9000
