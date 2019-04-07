@@ -1,6 +1,6 @@
 import Tone from "tone";
 
-var synth = new Tone.Synth().toMaster();
+const synth = new Tone.Synth().toMaster();
 
 const data = [
   { note: "E4", dur: "8n" },
@@ -23,10 +23,10 @@ const data = [
   [{ note: "C5", dur: "2n" },{ note: "C5", dur: "2n" }],
 ];
 
-var congaPart = new Tone.Sequence((time, { note, dur }) => {
+const seq = new Tone.Sequence((time, { note, dur }) => {
     synth.triggerAttackRelease(note, dur, time);
 }, data, "4n").start(0);
-congaPart.loop = false;
+seq.loop = false;
 Tone.Transport.bpm.value = 150; // テンポ
 
 document.body.insertAdjacentHTML("afterbegin", '<input type="button" value="play!">');

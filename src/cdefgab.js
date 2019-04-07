@@ -1,6 +1,6 @@
 import Tone from "tone";
 
-var synth = new Tone.Synth().toMaster();
+const synth = new Tone.Synth().toMaster();
 
 document.body.insertAdjacentHTML("afterbegin", `
     <input type="button" value="ド" id="c">

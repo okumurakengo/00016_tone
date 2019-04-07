@@ -1,6 +1,6 @@
 import Tone from "tone";
 
-var synth = new Tone.Synth().toMaster();
+const synth = new Tone.Synth().toMaster();
 
 document.body.insertAdjacentHTML("afterbegin", '<input type="button" value="play!">');
 document.querySelector("[type=button]").addEventListener("click", e => {
